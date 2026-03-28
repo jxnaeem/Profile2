@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nahid Hasan Naeem - Professional Portfolio | Full Stack Developer from Dhaka, Bangladesh">
+    <title>Nahid Hasan Naeem | Professional Portfolio</title>
+   
+    <script src="https://cdn.tailwindcss.com"></script>
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+   
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Kalpurush Font for Bengali Text -->
+    <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/kalpurush">
+   
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600&display=swap');
+       
+        :root {
+            --primary: #10b981; /* Emerald Green */
+        }
+       
+        /* English font */
+        .tailwind-ready {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Heading font (English) */
+        .heading-font {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        /* Bangla font - Kalpurush */
+        .bangla-font {
+            font-family: 'Kalpurush', sans-serif;
+        }
+       
+        .hero-bg {
+            background: #0f172a;
+        }
+       
+        .nav-link:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+            background-color: #10b981;
+            transition: 0.3s;
+        }
+       
+        .nav-link:hover:after { width: 100%; }
+       
+        .card-hover:hover {
+            transform: translateY(-12px) scale(1.03);
+            box-shadow: 0 25px 50px -12px rgba(16, 185, 129, 0.25);
+        }
+       
+        .floating { animation: float 3s ease-in-out infinite; }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+       
+        .glass {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(16px);
+        }
+    </style>
+</head>
+<body class="tailwind-ready bg-zinc-950 text-white overflow-x-hidden">
+    <nav class="fixed top-0 left-0 right-0 z-50 glass border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+            <!-- Logo / Heading -->
+            <div class="flex items-center gap-3">
+                <div class="w-9 h-9 bg-emerald-500 rounded-2xl flex items-center justify-center text-2xl shadow-lg">
+                    👨‍💻
+                </div>
+                <h1 class="heading-font text-2xl font-semibold tracking-tighter">Nahid Hasan Naeem</h1>
+            </div>
+           
+            <!-- Desktop Menu -->
+            <ul class="hidden md:flex items-center gap-10 text-base font-semibold">
+                <li><a href="#home" class="nav-link text-white/90 hover:text-emerald-400 bangla-font">হোম</a></li>
+                <li><a href="#skills" class="nav-link text-white/90 hover:text-emerald-400 bangla-font">দক্ষতা</a></li>
+                <li><a href="#projects" class="nav-link text-white/90 hover:text-emerald-400 bangla-font">প্রজেক্ট</a></li>
+                <li><a href="#contact" class="nav-link text-white/90 hover:text-emerald-400 bangla-font">যোগাযোগ</a></li>
+            </ul>
+          
+            <!-- Desktop WhatsApp Button -->
+            <a href="https://wa.me/8801615336392" target="_blank"
+               class="hidden md:flex items-center gap-3 bg-emerald-500 hover:bg-emerald-600 text-zinc-950 font-semibold px-7 py-3 rounded-3xl text-base transition-all bangla-font">
+                <i class="fab fa-whatsapp text-2xl"></i> যোগাযোগ করুন
+            </a>
+        </div>
+    </nav>
+    
+    <section id="home" class="hero-bg min-h-screen flex items-center pt-20">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div data-aos="fade-right" class="space-y-8">
+                <div class="inline-flex items-center gap-2 bg-emerald-500/10 backdrop-blur-md px-6 py-2 rounded-3xl text-sm font-medium border border-emerald-500/20 text-emerald-400">
+                    <div class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></div>
+                    Dhaka, Bangladesh
+                </div>
+               
+                <h6 class="heading-font text-5xl md:text-6xl font-bold leading-none tracking-tighter">
+                    <span class="bangla-font">নাহিদ হাসান নাঈম</span><br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-400">Full Stack Developer</span>
+                </h6>
+               
+                <p class="text-xl text-white/80 max-w-lg leading-relaxed bangla-font">
+                    আমি একজন ক্রিয়েটিভ ডিজাইনার ও ওয়েব ডেভেলপার, সুন্দর ডিজাইন, ইউজার-ফ্রেন্ডলি অভিজ্ঞতার সমন্বয়েই আমার প্রতিটি প্রজেক্ট গড়ে ওঠে।
+                </p>
+               
+                <div class="flex flex-wrap gap-4">
+                    <a href="#projects" class="flex-1 md:flex-none bg-emerald-500 hover:bg-emerald-600 text-zinc-950 font-semibold text-lg px-10 py-5 rounded-3xl flex items-center justify-center gap-3 transition-all bangla-font">
+                        <i class="fas fa-eye"></i> প্রজেক্ট দেখুন
+                    </a>
+                    <a href="NAEEM KHAN CV.pdf" download class="flex-1 md:flex-none border-2 border-emerald-500/50 hover:border-emerald-400 font-semibold text-lg px-10 py-5 rounded-3xl flex items-center justify-center gap-3 transition-all bangla-font">
+                        <i class="fas fa-download"></i> CV ডাউনলোড
+                    </a>
+                </div>
+            </div>
+           
+            <div data-aos="fade-left" class="relative flex justify-center">
+                <div class="relative">
+                    <div class="w-80 h-80 md:w-96 md:h-96 rounded-[4rem] overflow-hidden border-8 border-emerald-500/20 shadow-2xl floating">
+                        <img src="Profile Photo.png" alt="Nahid Hasan Naeem" class="w-full h-full object-cover">
+                    </div>
+                   
+                    <div class="absolute -top-6 -right-6 bg-zinc-900/80 backdrop-blur-xl text-white px-5 py-3 rounded-3xl shadow-xl flex items-center gap-2 text-sm font-medium border border-emerald-500/30">
+                        <i class="fas fa-rocket text-emerald-400"></i> Freelance Available
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- দক্ষতা সেকশন - এখানে ২টি নতুন কার্ড যুক্ত করা হয়েছে -->
+    <section id="skills" class="py-24 bg-zinc-950">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="px-6 py-2 bg-emerald-500/10 text-emerald-400 rounded-3xl text-sm font-medium bangla-font">দক্ষতা</span>
+                <h2 data-aos="fade-up" class="text-4xl heading-font font-semibold mt-4 bangla-font">আমার টেকনোলজি স্ট্যাক</h2>
+            </div>
+           
+            <!-- গ্রিড এখন ৬টি কার্ডের জন্য md:grid-cols-3 করা হয়েছে -->
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+                <!-- পুরনো ৪টি কার্ড -->
+                <div data-aos="fade-up" class="card-hover bg-white/5 border border-white/10 rounded-3xl p-8 text-center">
+                    <i class="fab fa-react text-6xl text-emerald-400 mb-6"></i>
+                    <h4 class="font-semibold text-xl">Frontend</h4>
+                    <p class="text-white/60 text-sm mt-2">React, Next.js, Tailwind</p>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="100" class="card-hover bg-white/5 border border-white/10 rounded-3xl p-8 text-center">
+                    <i class="fab fa-node-js text-6xl text-emerald-400 mb-6"></i>
+                    <h4 class="font-semibold text-xl">Backend</h4>
+                    <p class="text-white/60 text-sm mt-2">Node.js, Express</p>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="200" class="card-hover bg-white/5 border border-white/10 rounded-3xl p-8 text-center">
+                    <i class="fas fa-database text-6xl text-emerald-400 mb-6"></i>
+                    <h4 class="font-semibold text-xl">Database</h4>
+                    <p class="text-white/60 text-sm mt-2">Firebase, MongoDB</p>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="300" class="card-hover bg-white/5 border border-white/10 rounded-3xl p-8 text-center">
+                    <i class="fas fa-code text-6xl text-emerald-400 mb-6"></i>
+                    <h4 class="font-semibold text-xl">Programming</h4>
+                    <p class="text-white/60 text-sm mt-2">JavaScript, Python</p>
+                </div>
+                
+                <!-- নতুন ১: গ্রাফিক্স ডিজাইনার -->
+                <div data-aos="fade-up" data-aos-delay="400" class="card-hover bg-white/5 border border-white/10 rounded-3xl p-8 text-center">
+                    <i class="fas fa-palette text-6xl text-emerald-400 mb-6"></i>
+                    <h4 class="font-semibold text-xl">Graphics Designer</h4>
+                    <p class="text-white/60 text-sm mt-2">Photoshop, Figma, Illustrator</p>
+                </div>
+                
+                <!-- নতুন ২: বই লেখক -->
+                <div data-aos="fade-up" data-aos-delay="500" class="card-hover bg-white/5 border border-white/10 rounded-3xl p-8 text-center">
+                    <i class="fas fa-book text-6xl text-emerald-400 mb-6"></i>
+                    <h4 class="font-semibold text-xl">Book Writer</h4>
+                    <p class="text-white/60 text-sm mt-2">Novel, Blog, Creative Writing</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="projects" class="py-24 bg-zinc-950">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="px-6 py-2 bg-emerald-500/10 text-emerald-400 rounded-3xl text-sm font-medium bangla-font">প্রজেক্ট</span>
+                <h2 data-aos="fade-up" class="text-4xl heading-font font-semibold mt-4 bangla-font">আমার প্রজেক্টসমূহ</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- প্রজেক্ট ১ -->
+                <div data-aos="fade-up" class="card-hover bg-white/5 border border-white/10 rounded-3xl p-6 flex flex-col">
+                    <div class="flex-1">
+                        <div class="h-52 bg-gradient-to-br from-emerald-400 to-teal-400 rounded-2xl flex items-center justify-center mb-6 text-7xl">
+                            🛍️
+                        </div>
+                        <h3 class="text-2xl font-semibold bangla-font">ই-কমার্স ওয়েবসাইট</h3>
+                        <p class="text-white/70 mt-3 bangla-font">React ও Node.js দিয়ে তৈরি পূর্ণাঙ্গ অনলাইন শপিং প্ল্যাটফর্ম। Firebase দিয়ে অথেনটিকেশন এবং পেমেন্ট ইন্টিগ্রেশন।</p>
+                    </div>
+                    <a href="#" class="mt-8 inline-flex items-center gap-2 text-emerald-400 hover:text-emerald-300 font-medium bangla-font">
+                        বিস্তারিত দেখুন <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <!-- প্রজেক্ট ২ -->
+                <div data-aos="fade-up" data-aos-delay="100" class="card-hover bg-white/5 border border-white/10 rounded-3xl p-6 flex flex-col">
+                    <div class="flex-1">
+                        <div class="h-52 bg-gradient-to-br from-blue-400 to-indigo-400 rounded-2xl flex items-center justify-center mb-6 text-7xl">
+                            📱
+                        </div>
+                        <h3 class="text-2xl font-semibold bangla-font">সোশ্যাল মিডিয়া অ্যাপ</h3>
+                        <p class="text-white/70 mt-3 bangla-font">Next.js এবং MongoDB ব্যবহার করে রিয়েল-টাইম চ্যাট এবং পোস্ট শেয়ারিং ফিচার সহ সোশ্যাল প্ল্যাটফর্ম।</p>
+                    </div>
+                    <a href="#" class="mt-8 inline-flex items-center gap-2 text-emerald-400 hover:text-emerald-300 font-medium bangla-font">
+                        বিস্তারিত দেখুন <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <!-- প্রজেক্ট ৩ -->
+                <div data-aos="fade-up" data-aos-delay="200" class="card-hover bg-white/5 border border-white/10 rounded-3xl p-6 flex flex-col">
+                    <div class="flex-1">
+                        <div class="h-52 bg-gradient-to-br from-purple-400 to-pink-400 rounded-2xl flex items-center justify-center mb-6 text-7xl">
+                            📊
+                        </div>
+                        <h3 class="text-2xl font-semibold bangla-font">ড্যাশবোর্ড অ্যাপ</h3>
+                        <p class="text-white/70 mt-3 bangla-font">Python এবং React দিয়ে ডেটা ভিজ্যুয়ালাইজেশন ড্যাশবোর্ড। MongoDB ব্যাকএন্ড।</p>
+                    </div>
+                    <a href="#" class="mt-8 inline-flex items-center gap-2 text-emerald-400 hover:text-emerald-300 font-medium bangla-font">
+                        বিস্তারিত দেখুন <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact" class="py-16 bg-zinc-900">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16">
+        <div data-aos="fade-right">
+            <h2 class="text-5xl heading-font font-semibold bangla-font">যোগাযোগ করুন</h2>
+            <p class="mt-8 text-2xl text-white/60 bangla-font">আপনার প্রোজেক্ট আইডিয়া নিয়ে আলোচনা করতে চান? আমাকে ইমেইল বা মেসেজ দিন।</p>
+           
+            <div class="mt-12 space-y-6">
+                <!-- Email -->
+                <div class="flex items-center gap-6">
+                    <div class="w-12 h-12 bg-emerald-500/10 rounded-2xl flex items-center justify-center text-emerald-400">
+                        <i class="fas fa-envelope text-xl"></i>
+                    </div>
+                    <span class="text-xl">jxnaeem@gmail.com</span>
+                </div>
+                
+                <!-- WhatsApp -->
+                <div class="flex items-center gap-6">
+                    <div class="w-12 h-12 bg-emerald-500/10 rounded-2xl flex items-center justify-center text-emerald-400">
+                        <i class="fab fa-whatsapp text-xl"></i>
+                    </div>
+                    <span class="text-xl">+880 1615 336 392</span>                         
+                </div>
+
+                <!-- নতুন যুক্ত করা অংশ -->
+                <!-- মোবাইল নাম্বার -->
+                <div class="flex items-center gap-6">
+                    <div class="w-12 h-12 bg-emerald-500/10 rounded-2xl flex items-center justify-center text-emerald-400">
+                        <i class="fas fa-phone text-xl"></i>
+                    </div>
+                    <span class="text-xl">+880 01871 800 216</span>
+                </div>
+
+                <!-- Facebook ID -->
+                <div class="flex items-center gap-6">
+                    <div class="w-12 h-12 bg-emerald-500/10 rounded-2xl flex items-center justify-center text-emerald-400">
+                        <i class="fab fa-facebook text-xl"></i>
+                    </div>
+                    <a href="https://facebook.com/naeem1322" target="_blank" 
+                       class="text-xl hover:text-emerald-400 transition-colors">
+                       Facebook Personal Profile
+                    </a>
+                </div>
+
+                <!-- Facebook Page -->
+                <div class="flex items-center gap-6">
+                    <div class="w-12 h-12 bg-emerald-500/10 rounded-2xl flex items-center justify-center text-emerald-400">
+                        <i class="fab fa-facebook text-xl"></i>
+                    </div>
+                    <a href="https://facebook.com/sothikseba" target="_blank" 
+                       class="text-xl hover:text-emerald-400 transition-colors">
+                         Facebook Business Page
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Form (অপরিবর্তিত) -->
+        <form id="contact-form" class="space-y-6 bg-white/5 p-8 rounded-3xl border border-white/10">
+            <input type="text" placeholder="আপনার নাম" class="w-full bg-zinc-800 border border-white/10 rounded-2xl px-6 py-4 outline-none focus:border-emerald-500 transition-all">
+            <input type="email" placeholder="আপনার ইমেইল" class="w-full bg-zinc-800 border border-white/10 rounded-2xl px-6 py-4 outline-none focus:border-emerald-500 transition-all">
+            <textarea rows="4" placeholder="আপনার মেসেজ" class="w-full bg-zinc-800 border border-white/10 rounded-2xl px-6 py-4 outline-none focus:border-emerald-500 transition-all"></textarea>
+            <button type="submit" class="w-full bg-emerald-500 hover:bg-emerald-600 text-zinc-950 font-bold py-5 rounded-2xl transition-all bangla-font">
+                মেসেজ পাঠান
+            </button>
+        </form>
+    </div>
+</section>
+    <footer class="py-12 text-center text-white/40 border-t border-white/10">
+        <p>© 2026 Nahid Hasan Naeem. All Rights Reserved.</p>
+    </footer>
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 800, once: true });
+       
+        // Form alert
+        document.getElementById('contact-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('আপনার মেসেজটি সফলভাবে পাঠানো হয়েছে!');
+        });
+    </script>
+</body>
+</html>
